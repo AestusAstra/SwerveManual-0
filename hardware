@@ -1,1 +1,111 @@
+<p>FUNDAMENTAL CONSIDERATIONS
+
+COG and Mass distribution - in order to maximize speed and minimize current draw while turning, mass should be located closest to the 
+center of the robot from a top- down view.  One should also try to make the center of gravity as low as possible in order to avoid tipping
+or in games where there is a lot of extension, lurch.  
+
+Breakage - Robots will hit each other, and robots will break.  Attempt to 1. Avoid breakage by making things well supported, out of the
+right materials, and parts, avoid stressing actuators, and protect them via adding an independently supported output to prevent shock loads
+and more.  
+
+drivetrain optimization - make sure that the gear ratio makes sense given the weight of your robot and your goals - having an overagressive 
+ratio for your weight will lead to brownouts and blown fuses, or otherwise sluggish robot with significant current draw, while a less 
+agressive one might lead to a lack of speed. 
+
+mounting - you need to be able to attatch things bruh
+
+
+
+Belts
+
+Belt wrap - gt2 belts tend not to do well with wrap around pulleys with <20 teeth
+
+Slot EVERYTHING YOU CAN FOR BELTS.  BELTS WILL EXPAND AND STRETCH.  
+
+use gt2 belts for high rpm, low torque
+
+use 5mm HTD for low rpm, high torque
+
+3mm HTD for in between.  
+
+
+
+
+
+BEARINGS
+- bearings are often expensive, especially the large x contacts for the pods.  find good sealed bearings and dont mess them up.  They can
+be bought for slightly cheaper on amazon (uxcell) and you can often find them on thriftybot.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Swerve Specific
+
+- Wheel thickness - as tempting as it may be to slap on a 10 mm wheel, the thickness of the wheel plays a heavy role in the overall
+traction of the drivetrain. aim for >14mm
+
+- wheel durometer - between 20 to 70 durometer appears to be the sweet spot.  while the best option is custom molded polyurethane 
+with treads perpendicular to the direction of motion, gray grippy tread is available for cheap and is very quick and easy to install(super
+glue it to the wheel).  
+polyurethane might take experimentation and so should only be done with a backup ready.  
+
+Coax effect - a killer for programming for many rookie teams.  Make the ratio between the motor driven pulley and the motor drive pulley 
+for wheel rotation as small as possible, and put most of the reduction in the gearing in the pod, as a large ratio will create a strong
+coaxial effect upon the shaft, and lead to a weak rotation of the pod while the wheel rotates.  This means the servo rotating the pod will
+experience an uneven force, and programming will be near impossible.  anything over a ratio of 2:1 is unworkable.  
+
+Pod rotation pulleys will often skip.  this is usually due to a combination of these factors
+
+robot weight - the robot is too heavy.  
+
+lack of tension - always try to find perfect tension via a slotted test rig for your pod rotation pulleys and belts first before making the
+final cad.  tensioners can cause uneven forces and cause issues with programming
+
+lack of belt engagement - just make the pod rotation pulleys bigger.  lol. 
+
+it is also possible to just use a gear for the pod rotation if pulleys seem too problematic.  
+
+
+
+K I S S 
+keep it stupid simple
+
+
+- try to reduce complexity wherever possible.  Uneccesary power transmissions, features and more should be eliminated.  
+
+however, keep in mind that we are optimizing for performance.  Dont simplify things for the sake of simplicity, otherwise you might end up 
+cutting essential features.  
+
+
+Remember what the goal of what youre doing is - if your changes don't acheive a particular goal, then don't do it.  
+
+Make it compact - but not too compact.  Swervedrives still need some space to be effective.  Being too small can lead to a lack of traction 
+with wheel thicknesses being too low, or fragility.  The point of compactness is to improve COG- center of gravity, 
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
 
