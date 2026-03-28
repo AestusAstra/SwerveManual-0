@@ -1,8 +1,45 @@
 <!DOCTYPE = html>
-<p>DESIGN
+<h>SWERVE MANUAL 0</h>
 
-Requirements - A CADer with a decent amount of exerpience, and a Programmer with a decent amount of experience
+<h2>INTRODUCTION</h2>
 
+<h3>Have you heard the story of darth veer the wise?  Its not a story that they would tell you</h3>
+<p>Swervedrives are one of the most complex and difficult mechanisms in FTC, in an area where improved performance is often underapreciated.  
+It can be difficult, and is far more time consuming than the typical Mecanum drivetrain.  Many a team have tried, and failed to get it to work.
+  It is almost unilaterally advised not to attempt.  Compared to the time invested, mecanums are far better, and are consistently viable in every game, unlike
+  swervedrives that vary in viability from season to season.  Yet, the fact that you're here suggests that it isnt enough</p>
+<h3>Swerve is a pathway to many abilities some consider to be ... unnatural...</h3>
+<p>On the other hand, when they do work, Swervedrives can be absolutely broken.  Kneebreaking maneuvers, increased traction, insane speed, extreme defensive
+  and counter defensive properties all come with the package of a working swervedrive.  They can enable absurd teleops and push the ceiling of autos.  
+
+do you think you have what it takes</p>
+<h3>So you want to build a swervedrive?</h3>
+<p>Swervedrives are, still, risky, and difficult.  They can be difficult to pull off.  
+
+if you're going to do this, make sure that you have at least 4-5 of following:
+
+enough budget<br>
+dedication<br>
+experience<br>
+at least 1 good CADer<br>
+at least 1 good programmer<br>
+
+and a solid plan and understanding of swervedrives
+
+  if the last three are what you still need, you've come to the right place. 
+</p>
+
+<h>BEFORE WE BEGIN</h>
+
+<p>Make sure that swerve is even viable in the current season.  For a comeptition that is movement heavy, such as centerstage or DECODE, a swervedrive might
+be the deciding factor in a match.  However, in seasons where the ideal robot eliminates movement entirely, such as Into The Deep, swervedrives are almsot useless. 
+while the aura is undeniable, its not nearly as worth it if the game isnt movement based.  </p>
+
+<p>also get the following:</p>
+
+
+
+<p>
 CAD
 - Onshape, Fusion360, Solidworks all work.  However, Onshape is reccomended with its wide availability of featurescripts and plugins as 
 well as its parts library.  
@@ -11,211 +48,19 @@ simbas Cad lib
 ftc catalog
 part lighten
 beltgen
+</p>
 
+<p>software:
+Android studio, preferably linked to a github repository
+some sort of swerve autonomous library, such as ivy, wakeup, or pedro
+FTC dashboard, or panels (dashboard preferred)
+sloth
+some form of caching for motors, servos, and CRServos, either manually, from a wrapper, or an external library like dairy
+PhotonCore (or at least some basic multithreading)
+Usb mini cable (for photoncore)
+ wire everything swerve related to the rev control hub.  
+Axon mk2 minis, that have never been programmed (for swerve mode)
+</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-FUNDAMENTAL CONSIDERATIONS
-
-COG and Mass distribution - in order to maximize speed and minimize current draw while turning, mass should be located closest to the 
-center of the robot from a top- down view.  One should also try to make the center of gravity as low as possible in order to avoid tipping
-or in games where there is a lot of extension, lurch.  
-
-Breakage - Robots will hit each other, and robots will break.  Attempt to 1. Avoid breakage by making things well supported, out of the
-right materials, and parts, avoid stressing actuators, and protect them via adding an independently supported output to prevent shock loads
-and more.  
-
-drivetrain optimization - make sure that the gear ratio makes sense given the weight of your robot and your goals - having an overagressive 
-ratio for your weight will lead to brownouts and blown fuses, or otherwise sluggish robot with significant current draw, while a less 
-agressive one might lead to a lack of speed. 
-
-mounting - you need to be able to attatch things bruh
-
-
-
-Belts
-
-Belt wrap - gt2 belts tend not to do well with wrap around pulleys with <20 teeth
-
-Slot EVERYTHING YOU CAN FOR BELTS.  BELTS WILL EXPAND AND STRETCH.  
-
-use gt2 belts for high rpm, low torque
-
-use 5mm HTD for low rpm, high torque
-
-3mm HTD for in between.  
-
-
-
-
-
-BEARINGS
-- bearings are often expensive, especially the large x contacts for the pods.  find good sealed bearings and dont mess them up.  They can
-be bought for slightly cheaper on amazon (uxcell) and you can often find them on thriftybot.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Swerve Specific
-
-- Wheel thickness - as tempting as it may be to slap on a 10 mm wheel, the thickness of the wheel plays a heavy role in the overall
-traction of the drivetrain. aim for >14mm
-
-- wheel durometer - between 20 to 70 durometer appears to be the sweet spot.  while the best option is custom molded polyurethane 
-with treads perpendicular to the direction of motion, gray grippy tread is available for cheap and is very quick and easy to install(super
-glue it to the wheel).  
-polyurethane might take experimentation and so should only be done with a backup ready.  
-
-Coax effect - a killer for programming for many rookie teams.  Make the ratio between the motor driven pulley and the motor drive pulley 
-for wheel rotation as small as possible, and put most of the reduction in the gearing in the pod, as a large ratio will create a strong
-coaxial effect upon the shaft, and lead to a weak rotation of the pod while the wheel rotates.  This means the servo rotating the pod will
-experience an uneven force, and programming will be near impossible.  anything over a ratio of 2:1 is unworkable.  
-
-Pod rotation pulleys will often skip.  this is usually due to a combination of these factors
-
-robot weight - the robot is too heavy.  
-
-lack of tension - always try to find perfect tension via a slotted test rig for your pod rotation pulleys and belts first before making the
-final cad.  tensioners can cause uneven forces and cause issues with programming
-
-lack of belt engagement - just make the pod rotation pulleys bigger.  lol. 
-
-it is also possible to just use a gear for the pod rotation if pulleys seem too problematic.  
-
-
-
-K I S S 
-keep it stupid simple
-
-
-- try to reduce complexity wherever possible.  Uneccesary power transmissions, features and more should be eliminated.  
-
-however, keep in mind that we are optimizing for performance.  Dont simplify things for the sake of simplicity, otherwise you might end up 
-cutting essential features.  
-
-
-Remember what the goal of what youre doing is - if your changes don't acheive a particular goal, then don't do it.  
-
-Make it compact - but not too compact.  Swervedrives still need some space to be effective.  Being too small can lead to a lack of traction 
-with wheel thicknesses being too low, or fragility.  The point of compactness is to improve COG- center of gravity, 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-PROGRAMMING
-
-- swervekinematics can be found on Chief Delphi
-
-if you want to code yours from scratch, it is reccomended you do so in the offseason, as coding swerve from scratch is pretty hard.  
-
-
-overall, the architecture goes like this 
-
-
-
-COAX 
-
-each module has an axon, with a "polarity" value.  you can set your axis however you want.  In this example I will use the typical quandrant
-setup
-
-
-the "top right" or "front right" will be 1,1, the bottom left will be -1, -1.  
-
-the top right axon will turn to a set angle, calculated by the x and y values of your left joystick, which will determine the overall 
-direction of motion of the robot.  
-
-each other axon will turn to a set angle, with an offset based on its quandrant.  for example, -1,-1 will have it be offset by 180 degrees. 
-if you are using swerve mode axons (unprogrammed mk2 minis) then they will not require a PID, as they will be registered in software
-as servo mode with a built in PID.  if you are using CR mode with 4th wire encoders, use a pid, although typically only p is neccesary.  
-
-keep p values VERY LOW at first while tuning as it is extremely sensitive.  cooking an axon is like losing 90 dollars.  try like 0.0005
-motor velocity can be also set with a separate pid for more stable driving but is not neccesary, and it will require more encoders.  
-
-congrats! you're a third of the way there!
-
-next, comes rotation.  Add in a separate "rot" vector into your functions for driving.  Then add it in to each pod.  
-
-
-
-
-
-
-Driver augmentations
-DRIVE SWERVE IN FIELD CENTRIC - field centric swerve is strictly better.  If your driver cant handle it, suck it up.  It enables 
-significantly better rotations and control
-
-The only thing field centric requires is the rotations of all the vectors.  As a result, you can simply replace it with the function
-rotation formula ( this is why we split up the drive vectors earlier into forward and strafe)
-
-
-
-next, we have heading control.   
-
-
-
-
-And now, youre done with programming (teleop).  
-
-
-
-
-
-
-AUTO
-
-ApexOrbit - Coming Soon !
-Wakeup from CycleZLabs
-Pedro For Swerve/IVY</p>
