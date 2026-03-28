@@ -1,1 +1,62 @@
 
+<p>
+
+
+
+PROGRAMMING
+
+- swervekinematics can be found on Chief Delphi
+
+if you want to code yours from scratch, it is reccomended you do so in the offseason, as coding swerve from scratch is pretty hard.  
+
+
+overall, the architecture goes like this 
+
+
+
+COAX 
+
+each module has an axon, with a "polarity" value.  you can set your axis however you want.  In this example I will use the typical quandrant
+setup
+
+
+the "top right" or "front right" will be 1,1, the bottom left will be -1, -1.  
+
+the top right axon will turn to a set angle, calculated by the x and y values of your left joystick, which will determine the overall 
+direction of motion of the robot.  
+
+each other axon will turn to a set angle, with an offset based on its quandrant.  for example, -1,-1 will have it be offset by 180 degrees. 
+if you are using swerve mode axons (unprogrammed mk2 minis) then they will not require a PID, as they will be registered in software
+as servo mode with a built in PID.  if you are using CR mode with 4th wire encoders, use a pid, although typically only p is neccesary.  
+
+keep p values VERY LOW at first while tuning as it is extremely sensitive.  cooking an axon is like losing 90 dollars.  try like 0.0005
+motor velocity can be also set with a separate pid for more stable driving but is not neccesary, and it will require more encoders.  
+
+congrats! you're a third of the way there!
+
+next, comes rotation.  Add in a separate "rot" vector into your functions for driving.  Then add it in to each pod.  
+
+
+
+
+
+
+Driver augmentations
+DRIVE SWERVE IN FIELD CENTRIC - field centric swerve is strictly better.  If your driver cant handle it, suck it up.  It enables 
+significantly better rotations and control
+
+The only thing field centric requires is the rotations of all the vectors.  As a result, you can simply replace it with the function
+rotation formula ( this is why we split up the drive vectors earlier into forward and strafe)
+
+
+
+next, we have heading control.   
+
+
+
+
+And now, youre done with programming (teleop).  
+
+
+</p>
+
