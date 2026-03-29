@@ -1,3 +1,8 @@
+.TopUtilityBar {
+display:flex;
+}
+
+
 .DropDown {
   position: relative;
 float: right;
