@@ -1,6 +1,6 @@
 .DropDown {
   position: relative;
-  margin: right; 
+float: right;
 }
 
 .DropDown-Menu {
