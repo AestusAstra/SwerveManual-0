@@ -1,8 +1,8 @@
-.dropdown {
+.DropDown {
   position: relative;
 }
 
-.dropdown-menu {
+.DropDown-Menu {
   position: absolute;
   /* Initial hidden state */
   opacity: 0;
@@ -15,7 +15,7 @@
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.dropdown.active > .dropdown-menu {
+.DropDown.active > .DropDown-Menu {
   /* Active state when the menu is visible */
   opacity: 1;
   pointer-events: auto;
