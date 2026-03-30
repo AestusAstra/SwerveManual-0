@@ -5,7 +5,7 @@ display: block;
 
 .DropDown {
   position: relative;
-float: right;
+float: left;
 }
 
 .DropDown-Menu {
