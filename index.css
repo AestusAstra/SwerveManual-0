@@ -5,10 +5,11 @@ display: block;
 
 .DropDown {
   position: relative;
-float: left;
+float: right;
 }
 
 .DropDown-Menu {
+  float:left;
   position: absolute;
   /* Initial hidden state */
   opacity: 0;
