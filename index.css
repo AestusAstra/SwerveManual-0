@@ -1,10 +1,10 @@
 .TopUtilityBar {
-display: block;
+display: inline - block;
 }
 
 
 .DropDown {
-  position: relative;
+  position: absolute;
 float: right;
 }
 
