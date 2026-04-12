@@ -6,7 +6,12 @@ display: flex;
 }
 
 .menu-btn {
-  margin-left: auto;
+  float: right;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .overlay {
