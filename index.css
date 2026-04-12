@@ -1,11 +1,13 @@
 .TopUtilityBar {
 display: flex;
+  align-items: center;       /* Vertically center the title and button */
+  justify-content: space-between; /* Pushes title to left and menu to right */
+  padding: 10px 20px;
 }
 
 
 .DropDown {
   position: relative;
-float: right;
 }
 
 .DropDown-Menu {
