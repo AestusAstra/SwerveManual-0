@@ -5,6 +5,9 @@ display: flex;
   padding: 10px 20px;
 }
 
+.menu-btn {
+  margin-left: auto;
+}
 
 .overlay {
   display: none; /* Hidden by default */
