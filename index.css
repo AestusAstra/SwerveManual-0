@@ -1,12 +1,33 @@
+
+
+
+
 .TopUtilityBar {
 display: flex;
   align-items: center;       /* Vertically center the title and button */
   justify-content: space-between; /* Pushes title to left and menu to right */
-  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
+  position:fixed;
+  width:100%;
+  padding-inline:10%;
+  top: 0;
+  left: 0;
+  
+  
+.TopUtilityBar h1 {
+  color:white;
+}
+
+
 }
 
 .menu-btn {
-  float: right;
+  position: fixed;   /* Fixes them to the screen */
+  top: 5%;         /* Distance from top */
+  right: 5%;       /* Distance from right */
+  z-index: 1000;
   background: none;
   border: none;
   color: white;
@@ -23,16 +44,18 @@ display: flex;
   height: 100%;
   background-color: black;
   color: white;
-  z-index: 1000;
-  padding: 50px;
+  padding: 10%;
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
 }
 
 /* Close Button */
 .close-btn {
-  float: right;
-  background: none;
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  background: none;
   border: none;
   color: white;
   cursor: pointer;
