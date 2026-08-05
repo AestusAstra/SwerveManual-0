@@ -100,3 +100,9 @@ display: flex;
 .sub-links a:hover {
   color: white;
 }
+
+
+.maincontent {
+  margin-top: 100px; /* Adjust based on the height of your top bar */
+  padding: 20px;
+}
