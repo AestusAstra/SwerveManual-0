@@ -7,8 +7,8 @@ display: flex;
   align-items: center;       /* Vertically center the title and button */
   justify-content: space-between; /* Pushes title to left and menu to right */
   background-color: black;
-  color: white;
-  font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
+  color: #bbb;
+  font-family: 'Arial', Courier, monospace; /* Pixel-style font */
   position:fixed;
   width:100%;
   padding-inline:10%;
@@ -16,12 +16,16 @@ display: flex;
   left: 0;
   
   
+
+
+}
+
 .TopUtilityBar h1 {
-  color:white;
+color:#bbb;
+text-decoration: none;
+
 }
 
-
-}
 
 .menu-btn {
   position: fixed;   
@@ -31,7 +35,7 @@ display: flex;
   background: none;
   border: none;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 0.01rem;
 }
 
 .overlay {
@@ -57,7 +61,7 @@ display: flex;
   background: none;
   border: none;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 0.01rem;
 }
 
 /* Menu Layout */
@@ -72,18 +76,20 @@ display: flex;
   align-items: flex-start;
 }
 
-.main-link {
+.coaxial {
   color: #bbb;
-  font-size: 3rem;
+  font-size: 1.25rem;
   flex: 1; /* Takes up left side */
   text-transform: uppercase;
 }
 
-.main-link span {
-  font-size: 1rem;
-  vertical-align: super;
-  margin-right: 10px;
+.differential {
+  color: #bbb;
+  font-size: 1.25rem;
+  flex: 1; /* Takes up left side */
+  text-transform: uppercase;
 }
+
 
 .sub-links {
   flex: 1; /* Takes up right side */
@@ -92,10 +98,13 @@ display: flex;
   gap: 0.625rem;
 }
 
+
+
+
 .sub-links a {
   color: #bbb;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 1.25rem;
 }
 
 .sub-links a:hover {
