@@ -1,3 +1,42 @@
+<!DOCTYPE = html>
+<html>
+<head>
+ <!-- <link rel="stylesheet" href="index.css"> --> 
+<link rel="stylesheet" href="https://aestusastra.github.io/SwerveManual-0/differential.css">
+</head>
+
+ 
+ 
+ 
+<body>
+ <div class = "TopUtilityBar">
+  <h1>
+   <a href ="https://aestusastra.github.io/SwerveManual-0/">SWERVE MANUAL 0</a>
+  </h1>
+    <button class="menu-btn" onclick="toggleMenu()">MENU</button>
+     <div id="fullScreenMenu" class="overlay">
+      <button class="close-btn" onclick="toggleMenu()">CLOSE</button>
+      
+      <nav class="menu-content">
+        <div class="menu-row">
+          <div class="coaxial"><span>1</span> <a href="https://aestusastra.github.io/SwerveManual-0/coaxial">COAXIAL</a></div>
+          <div class="sub-links">
+            <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware">HARDWARE</a>
+            <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/software">SOFTWARE</a>
+          </div>
+        </div>
+        
+        <div class="menu-row">
+          <div class="differential"><span>2</span> <a href="https://aestusastra.github.io/SwerveManual-0/differential">DIFFERENTIAL</a></div>
+          <div class="sub-links">
+            <a href="https://aestusastra.github.io/SwerveManual-0/differential/hardware">HARDWARE</a>
+            <a href="https://aestusastra.github.io/SwerveManual-0/differential/software">SOFTWARE</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
 <p>differential swerve, instead of having an individual azimuth rotation actuator via servo, and movement powered via motor, 
 it utilizes a differential gear system in order to acheive azimuth rotation as well as wheel rotation.   moving the larger two parallel bevel gears in opposite
 directions at the same speed enables directional movement via the rotation of the small bevel gear connected to a shaft, while mvoing them in the same speed
@@ -16,3 +55,8 @@ Pros:<br>
   can be more complex<br>
 </p>
 
+</body>
+
+<script src="stylesheet" href="https://aestusastra.github.io/SwerveManual-0/differential.js"></script>
+
+</html>
