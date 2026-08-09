@@ -7,7 +7,7 @@ scene.background = new THREE.Color(0x000000);
 
 
 
-const myDiv = document.getElementById('three')
+const myDiv = document.getElementById('barracuda')
 
 const camera = new THREE.PerspectiveCamera(90, myDiv.clientWidth / myDiv.clientHeight, 0.1, 1000)
 
