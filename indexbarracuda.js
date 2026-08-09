@@ -24,3 +24,5 @@ loader.load('path_to_the_model', function (gltf) {
   scene.add(model)
 }
 )
+
+renderer.render(scene, camera)
