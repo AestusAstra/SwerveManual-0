@@ -1,1 +1,151 @@
+/* Top Utility Bar */
+
+.TopUtilityBar {
+display: flex;
+  align-items: center;       /* Vertically center the title and button */
+  justify-content: space-between; /* Pushes title to left and menu to right */
+  background-color: black;
+  color: #bbb;
+  font-family: 'Arial', Courier, monospace; /* Pixel-style font */
+  position:fixed;
+  width:100%;
+  padding-inline:10%;
+  top: 0;
+  left: 0;
+  
+  
+
+
+}
+
+.TopUtilityBar a{
+  color: #bbb;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.TopUtilityBar a:hover {
+  color: white;
+}
+
+.menu-btn {
+  position: fixed;   
+  top: 1.25rem;         
+  right: 1.25rem;       
+  z-index: 1000;     
+  background: none;
+  border: none;
+  color: white;
+  letter-spacing: 0.01rem;
+  font-size: 1rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 10%;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace; /* Pixel-style font */
+}
+
+/* Close Button */
+.close-btn {
+  position: fixed;   
+  top: 1.25rem;         
+  right: 1.25rem;       
+  z-index: 1000;     
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+  font-family:Arial, Helvetica, sans-serif;}
+
+/* Menu Layout */
+.menu-content {
+  margin-top: 100px;
+}
+
+.menu-row {
+  display: flex;
+  border-top: 1px solid #444;
+  padding: 1.25rem 0;
+  align-items: flex-start;
+}
+
+.coaxial {
+  color: #bbb;
+  font-size: 1.25rem;
+  flex: 1; /* Takes up left side */
+  text-transform: uppercase;
+}
+
+.coaxial a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.coaxial a:hover {
+  color: white;
+}
+
+.differential {
+  color: #bbb;
+  font-size: 1.25rem;
+  flex: 1; /* Takes up left side */
+  text-transform: uppercase;
+}
+
+.differential a{
+  color:#bbb;
+}
+
+.differential a:hover{
+  color:white;
+}
+
+
+.sub-links {
+  flex: 1; /* Takes up right side */
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+
+.sub-links a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.sub-links a:hover {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main content stuff */
+.maincontent {
+  margin-top: 100px; /* Adjust based on the height of your top bar */
+  padding: 20px;
+}
 

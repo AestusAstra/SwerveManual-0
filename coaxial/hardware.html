@@ -1,12 +1,46 @@
-<!DOCTYPE = hmtl>
 <!DOCTYPE = html>
-<link rel="stylesheet" href="hardware.css">
-<div class = "menu">
-<h1>
- <a href = "https://aestusastra.github.io/SwerveManual-0/">SWERVE MANUAL 0</a>
- <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware">HARDWARE</a> 
- <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/software">SOFTWARE</a> 
-</h1>
+<html>
+<head>
+ <!-- <link rel="stylesheet" href="index.css"> --> 
+<link rel="stylesheet" href="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware.css">
+</head>
+
+ 
+ 
+ 
+<body>
+ <div class = "TopUtilityBar">
+  <h1>
+   <a href ="https://aestusastra.github.io/SwerveManual-0/">SWERVE MANUAL 0</a>
+  </h1>
+    <button class="menu-btn" onclick="toggleMenu()">MENU</button>
+     <div id="fullScreenMenu" class="overlay">
+      <button class="close-btn" onclick="toggleMenu()">CLOSE</button>
+      
+      <nav class="menu-content">
+        <div class="menu-row">
+          <div class="coaxial"><span>1</span> <a href="https://aestusastra.github.io/SwerveManual-0/coaxial">COAXIAL</a></div>
+          <div class="sub-links">
+            <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware">HARDWARE</a>
+            <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/software">SOFTWARE</a>
+          </div>
+        </div>
+        
+        <div class="menu-row">
+          <div class="differential"><span>2</span> <a href="https://aestusastra.github.io/SwerveManual-0/differential">DIFFERENTIAL</a></div>
+          <div class="sub-links">
+            <a href="https://aestusastra.github.io/SwerveManual-0/differential/hardware">HARDWARE</a>
+            <a href="https://aestusastra.github.io/SwerveManual-0/differential/software">SOFTWARE</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+
 
  <h2>FUNDAMENTAL CONSIDERATIONS</h2>
 <p>
@@ -27,8 +61,9 @@ mounting - you need to be able to attatch things bruh
 
 
 <h2>Belts</h2>
+
 <p>
-Belt wrap - gt2 belts tend not to do well with wrap around pulleys with <20 teeth
+Belt wrap - gt2 belts tend not to do well with wrap around pulleys with &lt; 20 teeth
 
 Slot EVERYTHING YOU CAN FOR BELTS.  BELTS WILL EXPAND AND STRETCH.  
 
@@ -47,7 +82,6 @@ use 5mm HTD for low rpm, high torque
  - bearings are often expensive, especially the large x contacts for the pods.  find good sealed bearings and dont mess them up.  They can
 be bought for slightly cheaper on amazon (uxcell) and you can often find them on thriftybot.  
 </p>
-
 
 
 
@@ -113,6 +147,10 @@ with wheel thicknesses being too low, or fragility.  for any given general rule 
 
 
 
+</body>
+<script src="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware.js"></script>
+
+</html>
 
 
 
