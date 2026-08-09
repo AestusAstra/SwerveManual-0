@@ -134,11 +134,14 @@ display: flex;
 
 
 
-
-
-
-
-
+#three {
+            width: 32rem;
+            height: 32rem;
+            margin: 4rem auto;
+            border: 2px solid #FFF;
+            border-radius: 5px;
+            overflow: hidden;
+        }
 
 
 
@@ -148,3 +151,5 @@ display: flex;
   margin-top: 4rem; /* Adjust based on the height of your top bar */
   padding: 2rem;
 }
+
+
