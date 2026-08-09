@@ -19,7 +19,7 @@ myDiv.appendChild(renderer.domElement)
 
 const loader = new GLTFLoader()
 
-loader.load('path_to_the_model', function (gltf) {
+loader.load('https://aestusastra.github.io/SwerveManual-0/models/barracuda.glb', function (gltf) {
   const model = gltf.scene;
   scene.add(model)
 }
