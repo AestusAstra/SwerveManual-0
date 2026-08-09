@@ -145,6 +145,6 @@ display: flex;
 
 /* Main content stuff */
 .maincontent {
-  margin-top: 100px; /* Adjust based on the height of your top bar */
-  padding: 20px;
+  margin-top: 4rem; /* Adjust based on the height of your top bar */
+  padding: 2rem;
 }
