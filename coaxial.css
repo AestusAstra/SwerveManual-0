@@ -1,3 +1,5 @@
+/* Top Utility Bar */
+
 .TopUtilityBar {
 display: flex;
   align-items: center;       /* Vertically center the title and button */
@@ -130,6 +132,18 @@ display: flex;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* Main content stuff */
 .maincontent {
   margin-top: 100px; /* Adjust based on the height of your top bar */
   padding: 20px;

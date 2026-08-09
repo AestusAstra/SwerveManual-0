@@ -1,3 +1,4 @@
+/* Top Utility Bar */
 
 .TopUtilityBar {
 display: flex;
@@ -131,6 +132,18 @@ display: flex;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* Main content stuff */
 .maincontent {
   margin-top: 100px; /* Adjust based on the height of your top bar */
   padding: 20px;

@@ -1,8 +1,41 @@
 <!DOCTYPE = html>
-<link rel="stylesheet" href="index.css">
-<div class = "menu">
-<h1>
- <a href = "https://aestusastra.github.io/SwerveManual-0/">SWERVE MANUAL 0</a>
- <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware">HARDWARE</a> 
- <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/software">SOFTWARE</a> 
-</h1>
+<html>
+<head>
+ <!-- <link rel="stylesheet" href="index.css"> --> 
+<link rel="stylesheet" href="https://aestusastra.github.io/SwerveManual-0/differential/software.css">
+</head>
+
+ 
+ 
+ 
+<body>
+ <div class = "TopUtilityBar">
+  <h1>
+   <a href ="https://aestusastra.github.io/SwerveManual-0/">SWERVE MANUAL 0</a>
+  </h1>
+    <button class="menu-btn" onclick="toggleMenu()">MENU</button>
+     <div id="fullScreenMenu" class="overlay">
+      <button class="close-btn" onclick="toggleMenu()">CLOSE</button>
+      
+      <nav class="menu-content">
+        <div class="menu-row">
+          <div class="coaxial"><span>1</span> <a href="https://aestusastra.github.io/SwerveManual-0/coaxial">COAXIAL</a></div>
+          <div class="sub-links">
+            <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware">HARDWARE</a>
+            <a href="https://aestusastra.github.io/SwerveManual-0/coaxial/software">SOFTWARE</a>
+          </div>
+        </div>
+        
+        <div class="menu-row">
+          <div class="differential"><span>2</span> <a href="https://aestusastra.github.io/SwerveManual-0/differential">DIFFERENTIAL</a></div>
+          <div class="sub-links">
+            <a href="https://aestusastra.github.io/SwerveManual-0/differential/hardware">HARDWARE</a>
+            <a href="https://aestusastra.github.io/SwerveManual-0/differential/software">SOFTWARE</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</body>
+<script src="https://aestusastra.github.io/SwerveManual-0/differential/software.js"></script>
+</html>
