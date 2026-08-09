@@ -41,6 +41,27 @@
 
     <h1>COMING SOON</h1>
 
+    <h1>
+        The hardware
+    </h1>
+
+        <p>to make good software, ironically, we need to start with the hardware.  Lets first chart out the behavior we
+        want.  We want to 1, have the pod, the small rotating section containing the wheel, to turn based on a given input, as well as a 
+        method of getting the robot to rotate.  In order to do this, we need to know what position the pod is in, tracking it via 
+        an absolute position analog encoder.  You can get fairly cheap and compact ones off MelonBotics(thanks jack!) and East loop 
+        components.  
+
+        We then now need to map out the kinematics for our desired behaviors.  We can break the whole thing down into vectors.  
+
+        The wheel will always have an angle relative to the robot, based on the joystick  and y.  We can describe this via the 
+        vectors "strafe", and "forward".  We then combine this with the rotation vector, which is different in "polarity"(
+            positive or negative based on the wheel.  You control this with the other joystick.  
+        )
+    </p>
+
+
+
+
 
 </div>
 
