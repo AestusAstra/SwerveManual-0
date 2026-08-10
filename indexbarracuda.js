@@ -21,6 +21,11 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 myDiv.appendChild(renderer.domElement); 
 
+const controls = new OrbitControls(camera, renderer.domElement);
+window.control = controls
+controls.enableDamping = true; // Adds smooth momentum when dragging
+controls.dampingFactor = 0.05;
+
 const loader = new GLTFLoader(); 
 const dracoLoader = new DRACOLoader()
 dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');
@@ -39,6 +44,9 @@ loader.load(
 
     const maxDim = Math.max(size.x, size.y, size.z); 
     camera.position.set(center.x, center.y + (maxDim * 0.4), maxDim * 2.5); 
+
+    controls.target.copy(center);
+    controls.update();
   }, 
   undefined,
   (error) => { 
@@ -48,6 +56,7 @@ loader.load(
 
 function animate() { 
     requestAnimationFrame(animate); 
+    controls.update()
     renderer.render(scene, camera); 
 } 
 animate(); 
