@@ -31,6 +31,7 @@ loader.load(
 
     const maxDim = Math.max(size.x, size.y, size.z); 
     camera.position.set(center.x, center.y + (maxDim * 0.4), maxDim * 2.5); 
+    console.log('Loaded the thingy')
   }, 
   undefined,
   (error) => { 
