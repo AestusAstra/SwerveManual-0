@@ -25,7 +25,7 @@ console.log('appended')
 
 const loader = new GLTFLoader(); 
 loader.load(
-  '/models/barracuda.glb', 
+  'https://achintyaakula.github.io/SwerveManual-0//models/barracuda.glb', 
   function (gltf) { 
     const model = gltf.scene; 
     scene.add(model); 
