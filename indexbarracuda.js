@@ -20,7 +20,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.outputColorSpace = THREE.SRGBColorSpace; 
 console.log('post-renderer')
 
-container.appendChild(renderer.domElement); 
+myDiv.appendChild(renderer.domElement); 
 console.log('appended')
 
 const loader = new GLTFLoader(); 
