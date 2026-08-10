@@ -6,7 +6,7 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
 
-const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+const light = new THREE.AmbientLight( 0xFFFFFF );
 scene.add( light );
 
 const myDiv = document.getElementById('barracuda');
