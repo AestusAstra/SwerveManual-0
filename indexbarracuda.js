@@ -21,7 +21,7 @@ myDiv.appendChild(renderer.domElement);
 const loader = new GLTFLoader(); 
 const dracoLoader = new DRACOLoader()
 dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');
-gltfLoader.setDRACOLoader(dracoLoader);
+loader.setDRACOLoader(dracoLoader);
 
 loader.load(
   'https://achintyaakula.github.io/SwerveManual-0//models/barracuda.glb', 
