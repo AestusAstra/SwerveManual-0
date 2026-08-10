@@ -7,15 +7,19 @@ scene.background = new THREE.Color(0x000000);
 
 const myDiv = document.getElementById('barracuda');
 
+console.log('pre-camera')
 const camera = new THREE.PerspectiveCamera(90, myDiv.clientWidth / myDiv.clientHeight, 0.1, 1000); 
 camera.position.set(0, 0, 0); 
+console.log('post-camera')
 
 const renderer = new THREE.WebGLRenderer({ antialias: true }); 
 renderer.setSize(myDiv.clientWidth, myDiv.clientHeight); 
 renderer.setPixelRatio(window.devicePixelRatio); 
 renderer.outputColorSpace = THREE.SRGBColorSpace; 
+console.log('post-renderer')
 
 container.appendChild(renderer.domElement); 
+console.log('appended')
 
 const loader = new GLTFLoader(); 
 loader.load(
