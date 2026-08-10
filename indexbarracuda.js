@@ -24,7 +24,7 @@ dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5
 loader.setDRACOLoader(dracoLoader);
 
 loader.load(
-  'https://achintyaakula.github.io/SwerveManual-0//models/barracuda.glb', 
+  './models/barracuda.glb', 
   function (gltf) { 
     const model = gltf.scene; 
     scene.add(model); 
