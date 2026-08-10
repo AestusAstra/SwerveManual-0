@@ -6,6 +6,9 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
 
+const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+scene.add( light );
+
 const myDiv = document.getElementById('barracuda');
 
 const camera = new THREE.PerspectiveCamera(90, myDiv.clientWidth / myDiv.clientHeight, 0.1, 1000); 
