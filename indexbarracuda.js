@@ -11,7 +11,7 @@ scene.add( light );
 
 const myDiv = document.getElementById('barracuda');
 
-const camera = new THREE.PerspectiveCamera(90, myDiv.clientWidth / myDiv.clientHeight, 0.1, 1000); 
+const camera = new THREE.PerspectiveCamera(60, myDiv.clientWidth / myDiv.clientHeight, 0.05, 1000); 
 camera.position.set(0, 0, 0); 
 
 const renderer = new THREE.WebGLRenderer({ antialias: true }); 
@@ -25,6 +25,9 @@ const controls = new OrbitControls(camera, renderer.domElement);
 window.control = controls
 controls.enableDamping = true; // Adds smooth momentum when dragging
 controls.dampingFactor = 0.05;
+controls.enablePanning = false;
+controls.minPolarAngle = 0.929855121374234
+controls.maxPolarAngle = 2.051244850464312
 
 const loader = new GLTFLoader(); 
 const dracoLoader = new DRACOLoader()
