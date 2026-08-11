@@ -25,11 +25,11 @@ const controls = new OrbitControls(camera, renderer.domElement);
 window.control = controls
 controls.enableDamping = true; // Adds smooth momentum when dragging
 controls.dampingFactor = 0.05;
-controls.enablePanning = false;
-controls.minPolarAngle = 0.929855121374234
-controls.maxPolarAngle = 2.051244850464312
-controls.maxDistance = 0.48809551294523124
-controls.minDistance = 0.14251853846514984
+controls.enablePanning = true;
+controls.minPolarAngle = 0.9
+controls.maxPolarAngle = 2
+controls.maxDistance = 0.4
+controls.minDistance = 0.1
 
 const loader = new GLTFLoader(); 
 const dracoLoader = new DRACOLoader()
