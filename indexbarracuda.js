@@ -26,8 +26,8 @@ window.control = controls
 controls.enableDamping = true; // Adds smooth momentum when dragging
 controls.dampingFactor = 0.05;
 controls.enablePanning = true;
-controls.minPolarAngle = 0.9
-controls.maxPolarAngle = 2
+controls.minPolarAngle = 1
+controls.maxPolarAngle = 2.5
 controls.maxDistance = 0.2
 controls.minDistance = 0.1
 
