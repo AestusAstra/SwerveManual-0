@@ -9,7 +9,7 @@ scene.background = new THREE.Color(0x000000);
 const myDiv = document.getElementById('barracuda');
 
 const camera = new THREE.PerspectiveCamera(90, myDiv.clientWidth / myDiv.clientHeight, 0.1, 1000); 
-camera.position.set(0, 0, 0); 
+camera.position.set(0, 0.1, 0);
 
 const light = new THREE.AmbientLight(0xFFFFFF, 1);
 scene.add(light);
@@ -20,6 +20,16 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.outputColorSpace = THREE.SRGBColorSpace; 
 
 myDiv.appendChild(renderer.domElement); 
+
+const controls = new OrbitControls(camera, renderer.domElement);
+window.control = controls
+controls.enableDamping = true; // Adds smooth momentum when dragging
+controls.dampingFactor = 0.05;
+controls.enablePanning = false;
+controls.minPolarAngle = 0.929855121374234
+controls.maxPolarAngle = 2.051244850464312
+controls.maxDistance = 0.48809551294523124
+controls.minDistance = 0.14251853846514984
 
 const loader = new GLTFLoader(); 
 const dracoLoader = new DRACOLoader()
@@ -39,6 +49,9 @@ loader.load(
 
     const maxDim = Math.max(size.x, size.y, size.z); 
     camera.position.set(center.x, center.y + (maxDim * 0.4), maxDim * 2.5); 
+
+    controls.target.copy(center);
+    controls.update();
   }, 
   undefined,
   (error) => { 
