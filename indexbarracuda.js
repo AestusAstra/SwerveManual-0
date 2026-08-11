@@ -28,8 +28,8 @@ controls.dampingFactor = 0.05;
 controls.enablePanning = true;
 controls.minPolarAngle = 0.9
 controls.maxPolarAngle = 2
-controls.maxDistance = 0.4
-controls.minDistance = 0.1
+controls.maxDistance = 0.2
+controls.minDistance = 0.08
 
 const loader = new GLTFLoader(); 
 const dracoLoader = new DRACOLoader()
