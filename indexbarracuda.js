@@ -26,10 +26,10 @@ window.control = controls
 controls.enableDamping = true; // Adds smooth momentum when dragging
 controls.dampingFactor = 0.05;
 controls.enablePanning = true;
-controls.minPolarAngle = 1
-controls.maxPolarAngle = 2.5
+controls.minPolarAngle = 2
+controls.maxPolarAngle = 3
 controls.maxDistance = 0.2
-controls.minDistance = 0.1
+controls.minDistance = 0.12
 
 const loader = new GLTFLoader(); 
 const dracoLoader = new DRACOLoader()
