@@ -6,13 +6,13 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
 
+const light = new THREE.AmbientLight( 0xFFFFFF );
+scene.add( light );
+
 const myDiv = document.getElementById('barracuda');
 
-const camera = new THREE.PerspectiveCamera(90, myDiv.clientWidth / myDiv.clientHeight, 0.1, 1000); 
-camera.position.set(0, 0.1, 0);
-
-const light = new THREE.AmbientLight(0xFFFFFF, 1);
-scene.add(light);
+const camera = new THREE.PerspectiveCamera(90, myDiv.clientWidth / myDiv.clientHeight, 0.05, 1000); 
+camera.position.set(0, 0.1, 0); 
 
 const renderer = new THREE.WebGLRenderer({ antialias: true }); 
 renderer.setSize(myDiv.clientWidth, myDiv.clientHeight); 
@@ -61,6 +61,7 @@ loader.load(
 
 function animate() { 
     requestAnimationFrame(animate); 
+    controls.update()
     renderer.render(scene, camera); 
 } 
 animate(); 
