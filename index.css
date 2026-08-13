@@ -148,8 +148,22 @@ display: flex;
 
 /* Main content stuff */
 .maincontent {
+    font-family: Arial, Helvetica, sans-serif;
   margin-top: 4rem; /* Adjust based on the height of your top bar */
-  padding: 2rem;
+  padding: 4rem;
+
 }
 
+#swerveexamples {
+  margin-top: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding:4rem;
+  margin-bottom: 8rem;
+}
 
+.contact {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50rem;
+  margin-top: 8rem;
+  margin-bottom:16rem
+}
