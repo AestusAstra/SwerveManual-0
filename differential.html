@@ -39,7 +39,8 @@
 
   <div class = "maincontent">
 <p>differential swerve, instead of having an individual azimuth rotation actuator via servo, and movement powered via motor, 
-it utilizes a differential gear system in order to acheive azimuth rotation as well as wheel rotation.   moving the larger two parallel bevel gears in opposite
+it utilizes a differential gear system in order to acheive azimuth rotation as well as wheel rotation.   moving the larger two 
+parallel bevel gears in opposite
 directions at the same speed enables directional movement via the rotation of the small bevel gear connected to a shaft, while mvoing them in the same speed
 enables rapid azimuth rotation.  
 </p>
@@ -49,12 +50,57 @@ Pros:<br>
   can handle a heavier robot as azimuth rotation has more power<br>
   faster azimuth rotation<br>
   less current draw<br>
+  significantly better handling (no swerve wobble ) <br>
   
   cons:<br>
-  only has 2 wheels when 4 motors used, meaning less traction than coax typically or its crab diffy, in which turning speed and current draw are worse<br>
-  worse spacing, and more difficult to package <br>
-  can be more complex<br>
+  only has 2 wheels when 4 motors used, meaning possibly less traction than coax. Crab Diffy also exists, where the rotation of 
+  two pods are linked together on each side, allowing 4 wheels.  This however, makes changing the heading of the robot, or turning
+   a lot harder.    
+  <br>
+  often worse spacing, and often more difficult to package <br>
+
+  can be more complex, both mechanically and programming wise.  No well tested or documented auto solutions.  <br>
 </p>
+
+<div id = "swervetypecontainer">
+<div class = "swervetypes" id = "bevel-diffy"></div>
+<h2>Bevel diffy</h2><p1>(commonly known as gluten-free diffy, after the team that introduced diffy to FTC, and the GOAT)</p1>
+<img href = "">
+<p>this type of diffy typically uses bevel gears as its core differential.  this diffy has the differential around the 
+  center wheel, with the two larger bevel gears encircling it, and the smaller bevel being sandwiched between then, and connected
+  to the center axle of the wheel.  <br><br>
+
+  this type of diffy tends to also forgo using actual bearings and have both the supports for the axle and the larger bevel
+  gears be supported by a large disc riding V-Groove bearings instead of large X-Contact bearings. V-Groove bearings, while cheap,
+  come with many issues, as creating the disc profile to ride on them requires you carefully undersize them, otherwise they will 
+  get stuck.  however, undersizing them too much comes with backlash, and fragility.  They also are bulky and much larger than 
+  using x-contact bearings, and not as smooth.  Overall, V-Grooves are not reccomended.  
+  
+  This type of diffy requires 3d printed bevel gears that can be difficult to get right, and are often larger and more difficult
+  to package comapred to spur diffies.  
+  <br><br>
+</p>
+
+
+
+<div class = "swervetypes" id = "Spur-diffy"></div>
+<h2>Spur gear diffy</h2><p1>(commonly known as Tayor-diffy, after the man, the myth, the ledgend, the late Anthony Taylor)</p>
+<img href=" ">
+<p>This type of diffy came about later than bevel diffy.  It utilized spur gears to create a differential effect.  
+  It has an advantage of being able to be done entirely with steel spur COTS (commercial, off the shelf) gears from common 
+  manufacterers like GoBILDA.  If one wants to get custom gears to push the archetype further though, SLM (metal 3d printing)
+  you have that option as well.  This swerve tends to be much easier to "get right the first time", and is highly robust.  
+
+  Spur diffies as of now, have the edge, and are thus reccomended if you actually intend to use them during competition
+</p>
+
+
+
+</div>
+
+
+
+
 </div>
 
 
