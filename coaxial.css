@@ -145,8 +145,11 @@ display: flex;
 
 /* Main content stuff */
 .maincontent {
-  font-size:2rem;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 4rem; /* Adjust based on the height of your top bar */
   padding: 4rem;
+}
+
+.maincontent p{
+  font-size: 2rem;
 }
