@@ -155,16 +155,16 @@ display: flex;
 }
 
 .maincontent h2 {
-  font-size : 1.6rem;
+  font-size : 4rem;
 
 }
 
 .maincontent p {
-font-size: 0.5rem;
+font-size: 2 rem;
 }
 
 .maincontent h3 {
-  font-size: 1 rem;
+  font-size: 4 rem;
 }
 
 #swerveexamples {
