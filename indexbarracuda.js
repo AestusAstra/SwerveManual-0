@@ -6,8 +6,20 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
 
-const light = new THREE.AmbientLight( 0xFFFFFF );
+const directionalLight = new THREE.DirectionalLight( 0xFFFFFF, 1.5);
+scene.add( directionalLight );
+directionalLight.castShadow = true;
+directionalLight.position.set(0,1,0);
+
+const directionalLight2 = new THREE.DirectionalLight( 0xFFFFFF, 0.5);
+scene.add( directionalLight2 );
+directionalLight2.castShadow = true;
+directionalLight2.position.set(0,0,1);
+
+const light = new THREE.AmbientLight( 0xFFFFFF, 0.05);
 scene.add( light );
+
+
 
 const myDiv = document.getElementById('barracuda');
 
@@ -28,7 +40,7 @@ controls.dampingFactor = 0.05;
 controls.enablePanning = true;
 controls.minPolarAngle = 0
 controls.maxPolarAngle = 3
-controls.maxDistance = 0.2
+controls.maxDistance = 0.16
 controls.minDistance = 0.12
 
 const loader = new GLTFLoader(); 
