@@ -16,7 +16,7 @@ scene.add( directionalLight2 );
 directionalLight2.castShadow = true;
 directionalLight2.position.set(0,0,1);
 
-const light = new THREE.AmbientLight( 0xFFFFFF, 0.05);
+const light = new THREE.AmbientLight( 0xFFFFFF, 0.1);
 scene.add( light );
 
 
