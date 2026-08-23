@@ -85,37 +85,68 @@ display: flex;
   align-items: flex-start;
 }
 
-.coaxial {
+#coaxial {
   color: #bbb;
   font-size: 1.25rem;
   flex: 1; /* Takes up left side */
-  text-transform: uppercase;
 }
 
-.coaxial a {
+#coaxial a {
   color: #bbb;
   text-decoration: none;
   font-size: 1.25rem;
 }
 
-.coaxial a:hover {
+#coaxial a:hover {
   color: white;
 }
 
-.differential {
+#differential {
   color: #bbb;
   font-size: 1.25rem;
   flex: 1; /* Takes up left side */
-  text-transform: uppercase;
 }
 
-.differential a{
+#differential a{
   color:#bbb;
 }
 
-.differential a:hover{
+#differential a:hover{
   color:white;
 }
+
+
+#about {
+  color: #bbb;
+  font-size: 1.25rem;
+  flex: 1; /* Takes up left side */
+}
+
+#about a{
+  color:#bbb;
+}
+
+#about a:hover{
+  color:white;
+}
+
+#contact {
+  color: #bbb;
+  font-size: 1.25rem;
+  flex: 1; /* Takes up left side */
+}
+
+#contact a{
+  color:#bbb;
+}
+
+#contact a:hover{
+  color:white;
+}
+
+
+
+
 
 
 .sub-links {
@@ -135,6 +166,19 @@ display: flex;
 .sub-links a:hover {
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -221,7 +265,11 @@ font-size: 2 rem;
 
 
 
+#otherswerves {
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
 
+}
 
 
 
