@@ -43,6 +43,9 @@ controls.maxPolarAngle = 3
 controls.maxDistance = 0.16
 controls.minDistance = 0.12
 
+
+
+
 const loader = new GLTFLoader(); 
 const dracoLoader = new DRACOLoader()
 dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');

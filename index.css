@@ -184,14 +184,64 @@ font-size: 2 rem;
 }
 
 #swerveexamples a {
-  color:white;
-  text-decoration: none;
+  text-decoration: underline;
+  color:red;
 }
 
 #swerveexamples a:hover{
-  color: red;
+    text-decoration: none;
+  color: #64BB58;
 }
 
+
+.swerveexampleinstances {
+  padding-top: 2rem;
+  display:flex
+}
+
+.swerveexampletext {
+  display:block;
+  width: 30rem;
+  padding: 1rem;
+}
+
+
+
+
+#stellarimg {
+  width: 50rem;
+  height: auto;
+}
+
+#barracudaimg {
+  width: 50rem;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact stuff */
 .contact {
   display:flex;
   font-family: Arial, Helvetica, sans-serif;
