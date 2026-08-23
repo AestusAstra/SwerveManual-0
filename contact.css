@@ -166,3 +166,55 @@ display: flex;
 .sub-links a:hover {
   color: white;
 }
+
+/* Main content stuff */
+.maincontent {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 4rem; /* Adjust based on the height of your top bar */
+  padding: 4rem;
+
+}
+
+.maincontent h2 {
+  font-size : 2rem;
+
+}
+
+.maincontent p {
+font-size: 2 rem;
+}
+
+.maincontent h3 {
+  font-size: 1 rem;
+}
+
+
+/*Contact stuff */
+.contact {
+  display:flex;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color:white;
+  background-color: black;
+}
+
+.contact a {
+  color:white;
+}
+
+.contact a:hover {
+  color:red;
+}
+
+.contact h1 {
+  font-size: 2rem;
+}
+
+.contact ul{
+  list-style-type:none;
+  font-size: 1.5rem;
+  position:relative;
+  left: 50rem;
+}
