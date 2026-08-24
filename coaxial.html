@@ -2,7 +2,7 @@
 <html>
 <head>
  <!-- <link rel="stylesheet" href="index.css"> --> 
-<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="./coaxial.css">
 </head>
 
  
@@ -55,27 +55,27 @@
   <div class = "big image"></div>
   
   <div class = "maincontent">
-  <p>Coaxial swerve, is the far more straightforward way to do a drivetrain.  For movement, it is simply powered by 1 motor per pod, with a single servo to power azimuth
-  rotation.  
+    <h2>COAXIAL</h2>
+
+
+    <h2>INTRODUCTION</h2>
+
+
+
+
+
+
+
+  <p>Coaxial swerve, is a very straightforward way to do a drivetrain.  For movement, it is simply powered by 1 motor per pod, 
+    with a single servo to power Azimuth rotation.    
 
   due to using a coaxial shaft, it suffers from the effects of coaxial rotation, otherwise known as the twin "coax effect"
 
-  the coax effect comes in two parts.  
-
-  the first is due to imperfect bearings, and thus, rotation of the central shaft, powering the wheel, ends up actually moving 
-  the "pod"/the section that holds the axle of the wheel with it, changing its angle.  This unwanted movement fights the 
-  attempts of the servo that is meant to control rotation, and can mess with your tuning and steering.  
-
-  the second is a consequence of the gear, geared to the central shaft, moving around it as the pod is moved.  As the pod moves,
-  the gear attatched to the shaft geared via a bevel to the wheel rotates respective to a stationary observer, as well as the 
-  pod itself.  You can calculate it as exactly the gear ratio between the gear of the central shaft and the outer gear.  
-
-  this means that when the pod is rotated, the physical robot is moved as well, forcing the servos to actually do some "driving" 
-  action.  This puts extra strain on the servos.  More about these will be continued in HARDWARE.  
 
 
 </p>
 <p>
+  
 Pros:<br>
   "simpler hardware"<br>
   "easier to program"<br>
@@ -90,8 +90,13 @@ Pros:<br>
   more current draw <br>
   takes up 4 servo slots<br>
   weaker azimuth, and thus possible issues with "swerve wobble" <br>
+  The "coax effect"<br>
 </p>
 </div>
+
+<p>
+  Encoders
+</p>
 
 </body>
 <!--script src="coaxial.js"></script-->
