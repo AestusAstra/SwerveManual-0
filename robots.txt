@@ -19,3 +19,9 @@ Disallow: /
 
 User-agent: CCBot
 Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://aestusastra.github.io/SwerveManual-0/sitemap.xml
+

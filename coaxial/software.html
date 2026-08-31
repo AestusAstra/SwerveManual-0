@@ -89,7 +89,12 @@ motor velocity can be also set with a separate pid for more stable driving but i
 
 congrats! you're a third of the way there!
 
-next, comes rotation.  Add in a separate "rot" vector into your functions for driving.  Then add it in to each pod.  
+next, comes rotation.  Add in a separate "rot" vector into your functions for driving.  split it up into 
+forward and lateral components, and then add them to the lateral and forward vectors for each pod.
+
+link the rot vector to the right joystick x.  
+
+and now you have the standardized swerve control.  
 
 
 
@@ -97,7 +102,7 @@ next, comes rotation.  Add in a separate "rot" vector into your functions for dr
 
 
 Driver augmentations
-DRIVE SWERVE IN FIELD CENTRIC - field centric swerve is strictly better.  If your driver cant handle it, suck it up.  It enables 
+DRIVE SWERVE IN FIELD CENTRIC - field centric swerve is strictly better.  It enables 
 significantly better rotations and control
 
 The only thing field centric requires is the rotations of all the vectors.  As a result, you can simply replace it with the function
@@ -111,6 +116,16 @@ next, we have heading control.
 
 
 And now, youre done with programming (teleop).  
+
+
+
+Common issues:
+
+PID might be faulty.  This might be due to hardware issues, such as the coax effect.  
+
+Encoder functioning improperly.  One can check this by using telemetry.  check hardware for possible fixes and causes.  
+
+
 
 
 </p>

@@ -176,11 +176,84 @@ with wheel thicknesses being too low, or fragility.  for any given general rule 
 
   this means that when the pod is rotated, the physical robot is moved as well, forcing the servos to actually do some "driving" 
   action.  This puts extra strain on the servos.  
-    HARDWARE.  
 </a>
   
 
   </p>
+
+  <p>parts and vendors
+
+<a href = "">Lily-Bearing</a>
+Lily bearing has one of the largest catalogs of the thin section type of bearings needed for swerve.
+
+thriftybot has many sizes of bearings in imperial as well.  
+
+rs = rubber shield.  isntall and forget, but might have a little more friction involved.  
+zz = metal cage by itself, meaning less friction, althought there is a chance dust and grime forms, or it might need to be 
+re-lubricated
+
+Melonbotics is one of the best vendors for swerve, with many useful items, including the smallest abs encoder for ftc,
+ a custom swerve tread, and a powerful super servo.  
+
+ East loop components is also reccomended, for their very high quality pinion gears and pulleys.  
+
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+<p>common issues:
+  Encoders: 
+  
+  Improper configuration can cause the software to confuse which encoder corresponds to which pod, causing issues.  
+
+  Bad wiring can also mess with encoder readings, as frayed, torn, or otherwise chipped wires will disrupt readings.  
+  Bad connections on the Axon 4th wire encoder are very common and often overlooked.  Always check the quality of the 
+  crimp on connectors.  
+
+  Dysfunctional encoders can give inaccurate, inconsistent, or unstable readings.  Causes of this include simple breaking 
+  of the motor, hall effect sensor, any internal power transfers, and firmware crashes.  Firmware crashes are especially
+  common on the sensorange encoders.  
+  
+  Encoders must track the physical rotation of the pod, and so a disruption of the transmission that transfers
+  the rotation of the pod to the encoder, via losses in motion like backlash can cause error to build up.  
+
+  Improper gearing will also do the same, as an absolute encoder can only track it accurately if the pod 
+  is 1:1 with the encoder.  
+  
+  
+  Over/under gearing:
+
+  Overgearing can result in high power draw, blown fuses, and slow driving due to the wheels not having enough torque for 
+  the robot.  Always check using a drivetrain simulator like ILITE that your gearing is feasible for the given mass 
+  of the robot.  
+  
+  Robot Weight:
+
+  A sufficiently heavy robot will lead to further issues, as the axon mini will begin to struggle to power the 
+  azimuth rotation for the wheels.  This is why it is reccomended to keep your robot under 13kg if you are running 
+  coaxial swerve.  
+
+  fragility: 
+  poorly designed parts, especially 3d printed ones can bend, flex and break.  
+
+  Improper tension: 
+  lack of tension can cause belts to skip resulting in lost motion.  Too much tension can lead to a loss in efficency
+  and 
+</p>
+
+
+
+
+
+
 
 
 
