@@ -1,100 +1,164 @@
 <!DOCTYPE = html>
 <html>
-<head>
- <!-- <link rel="stylesheet" href="index.css"> --> 
-<link rel="stylesheet" href="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware.css">
-</head>
+  <head>
+  <!-- <link rel="stylesheet" href="index.css"> --> 
+  <link rel="stylesheet" href="../coaxial/hardware.css">
+  </head>
 
  
  
  
-<body>
- <div class = "TopUtilityBar">
-  <h1>
-   <a href ="../index">SWERVE MANUAL 0</a>
-  </h1>
-    <button class="menu-btn" onclick="toggleMenu()">MENU</button>
-     <div id="fullScreenMenu" class="overlay">
-      <button class="close-btn" onclick="toggleMenu()">CLOSE</button>
-      
-      <nav class="menu-content">
-        <div class="menu-row">
-          <div id="coaxial"><span>1</span> <a href="../coaxial">COAXIAL</a></div>
-          <div class="sub-links">
-            <a href="../coaxial/hardware">HARDWARE</a>
-            <a href="../coaxial/software">SOFTWARE</a>
-          </div>
-        </div>
-        
-        <div class="menu-row">
-          <div id="differential"><span>2</span> <a href="../differential">DIFFERENTIAL</a></div>
-          <div class="sub-links">
-            <a href="../differential/hardware">HARDWARE</a>
-            <a href="../differential/software">SOFTWARE</a>
-          </div>
-        </div>
-      
-        <div class="menu-row">
-          <div id="about"><span>3</span> <a href="../about">ABOUT</a></div>
-          <div class="sub-links">
-            <a href="../about/impact">IMPACT</a>
-          </div>
-        </div>
+  <body>
+    <div class = "TopUtilityBar">
+      <h1>
+      <a href ="../index">SWERVE MANUAL 0</a>
+      </h1>
+        <button class="menu-btn" onclick="toggleMenu()">MENU</button>
+        <div id="fullScreenMenu" class="overlay">
+          <button class="close-btn" onclick="toggleMenu()">CLOSE</button>
+          
+          <nav class="menu-content">
+            <div class="menu-row">
+              <div id="coaxial"><span>1</span> <a href="../coaxial">COAXIAL</a></div>
+              <div class="sub-links">
+                <a href="../coaxial/hardware">HARDWARE</a>
+                <a href="../coaxial/software">SOFTWARE</a>
+              </div>
+            </div>
+            
+            <div class="menu-row">
+              <div id="differential"><span>2</span> <a href="../differential">DIFFERENTIAL</a></div>
+              <div class="sub-links">
+                <a href="../differential/hardware">HARDWARE</a>
+                <a href="../differential/software">SOFTWARE</a>
+              </div>
+            </div>
+          
+            <div class="menu-row">
+              <div id="about"><span>3</span> <a href="../about">ABOUT</a></div>
+              <div class="sub-links">
+                <a href="../about/impact">IMPACT</a>
+              </div>
+            </div>
 
-                <div class="menu-row">
-          <div id="contact"><span>4</span> <a href="../contact">CONTACT</a></div>
-        </div>
-      </nav>
+            <div class="menu-row">
+              <div id="contact"><span>4</span> <a href="../contact">CONTACT</a>
+              </div>
+          </div>
+        </nav>
+      </div>
     </div>
-  </div>
 
 
 
-<div class = "maincontent">
+    <div class = "maincontent">
+
+      <div id = "coaxeffect">
+        <h2>
+          THE COAX EFFECT
+        </h2>
+
+        <p>
+        the coax effect is a known issue that comes to coaxial swerves, and it comes in two parts.  
+
+        the first is due to imperfect bearings, causing rotation of the central shaft, which powering the wheel, to end up 
+        actually moving the "pod" with it, changing its angle.  This unwanted movement fights the 
+        attempts of the servo that is meant to control rotation, and can mess with your tuning and steering.  
 
+        the second is a consequence of the gear, geared to the central shaft, moving around it as the pod is moved.  As the pod moves,
+        the gear attatched to the shaft geared via a bevel to the wheel rotates respective to a stationary observer, as well as the 
+        pod itself.  You can calculate it as exactly the gear ratio between the gear of the central shaft and the outer gear.  
 
- <h2>FUNDAMENTAL CONSIDERATIONS</h2>
-<p>
-COG and Mass distribution - in order to maximize speed and minimize current draw while turning, mass should be located closest to the 
-center of the robot from a top- down view.  One should also try to make the center of gravity as low as possible in order to avoid tipping
-or in games where there is a lot of extension, lurch.  
+        this means that when the pod is rotated, the physical robot is moved as well, forcing the servos to actually do some 
+        "driving" action.  This puts extra strain on the servos.  
+        
 
-Breakage - Robots will hit each other, and robots will break.  Attempt to 1. Avoid breakage by making things well supported, out of the
-right materials, and parts, avoid stressing actuators, and protect them via adding an independently supported output to prevent shock loads
-and more.  
+        </p>
 
-drivetrain optimization - make sure that the gear ratio makes sense given the weight of your robot and your goals - having an overagressive 
-ratio for your weight will lead to brownouts and blown fuses, or otherwise sluggish robot with significant current draw, while a less 
-agressive one might lead to a lack of speed. 
+      </div>
 
-mounting - you need to be able to attatch things bruh
-</p>
+      <div id="partsandvendors">
+        <h2>PARTS AND VENDORS</h2>
+        <p>
+          <h3>BEARINGS</h3>
+          <a href = "">Lily-Bearing</a> has one of the largest catalogs of the thin section type of bearings needed for swerve.
+          <br><br>
+          <a href = "">ThriftyBot</a> has many sizes of bearings in imperial as well.  
+          <br><br>
+          
+          <div class = "note">
+            <h3>NOTE:</h3>
+            <p>
+              rs = rubber shield.  isntall and forget, but might have a little more friction involved.  <br>
+              zz = metal cage by itself, meaning less friction, althought there is a chance dust and grime forms, or it might need 
+              to be re-lubricated<br><br>
+            </p>
+          </div>
+          
+          <h3>ENCODERS</h3>
+          <a href = "">MelonBotics</a> is one of the best vendors for swerve, with many useful items, including the smallest abs encoder for ftc,            
+          a custom swerve tread, and a powerful super servo.  <br><br>
+          
+          <h3>MISC.</h3>
+          <a href = "">East loop components</a> is also reccomended, for their very high quality pinion gears and pulleys. 
+          They have encoders as well, but they are much bulkier.  
+        </p>
+      </div>
 
 
-<h2>Belts</h2>
 
-<p>
-Belt wrap - gt2 belts tend not to do well with wrap around pulleys with &lt; 20 teeth
 
-Slot EVERYTHING YOU CAN FOR BELTS.  BELTS WILL EXPAND AND STRETCH.  
 
-use gt2 belts for high rpm, low torque
 
-use 5mm HTD for low rpm, high torque
 
-3mm HTD for in between.  
-</p>
 
+      <div id = "commonissues">
+        <h2>COMMON ISSUES</h2>
+        
+        <h3>Encoders: </h3>
+        
+        <p>   
+          Improper configuration can cause the software to confuse which encoder corresponds to which pod, 
+          causing issues.<br><br>
 
+          Bad wiring can also mess with encoder readings, as frayed, torn, or otherwise chipped wires will disrupt readings.  
+          Bad connections on the Axon 4th wire encoder are very common and often overlooked.  Always check the quality of the 
+          crimp on connectors.  <br><br>
 
+          Dysfunctional encoders can give inaccurate, inconsistent, or unstable readings.  Causes of this include simple breaking 
+          of the motor, hall effect sensor, any internal power transfers, and firmware crashes.  Firmware crashes are especially
+          common on the sensorange encoders.  <br><br>
+          
+          Encoders must track the physical rotation of the pod, and so a disruption of the transmission that transfers
+          the rotation of the pod to the encoder, via losses in motion like backlash can cause error to build up.<br><br>
 
-<h2>BEARINGS</h2>
-<p>
- - bearings are often expensive, especially the large x contacts for the pods.  find good sealed bearings and dont mess them up.  They can
-be bought for slightly cheaper on amazon (uxcell) and you can often find them on thriftybot.  
-</p>
+          Improper gearing will also do the same, as an absolute encoder can only track it accurately if the pod 
+          is 1:1 with the encoder.  <br><br>
+              
+        </p>  
+          
+        <h3>Over/under gearing:</h3>
+        <p>
+          Overgearing can result in high power draw, blown fuses, and slow driving due to the wheels not having enough torque for 
+          the robot.  Always check using a drivetrain simulator like ILITE that your gearing is feasible for the given mass 
+          of the robot.  <br><br>
+          </p>
+        
+        
+        <h3>Robot Weight:</h3>
+        <p>
+          A sufficiently heavy robot will lead to further issues, as the axon mini will begin to struggle to power the 
+          azimuth rotation for the wheels.  This is why it is reccomended to keep your robot under 13kg if you are running 
+          coaxial swerve.  
 
+          fragility: 
+          poorly designed parts, especially 3d printed ones can bend, flex and break.  
 
+          Improper tension: 
+          lack of tension can cause belts to skip resulting in lost motion.  Too much tension can lead to a loss in efficency
+          and parts "locking up".  
+        </p>
+      </div>
 
 
 
@@ -103,181 +167,37 @@ be bought for slightly cheaper on amazon (uxcell) and you can often find them on
 
 
 
+    </div>
 
 
 
 
 
-<h2>Swerve Specific</h2>
-<p>
-- Wheel thickness - as tempting as it may be to slap on a 10 mm wheel, the thickness of the wheel plays a heavy role in the overall
-traction of the drivetrain. aim for >14mm
 
-- wheel durometer - between 20 to 70 durometer appears to be the sweet spot.  while the best option is custom molded polyurethane 
-with treads perpendicular to the direction of motion, gray grippy tread is available for cheap and is very quick and easy to install(super
-glue it to the wheel).  
-polyurethane might take experimentation and so should only be done with a backup ready.  
 
-Coax effect - a killer for programming for many rookie teams.  Make the ratio between the motor driven pulley and the motor drive pulley 
-for wheel rotation as small as possible, and put most of the reduction in the gearing in the pod, as a large ratio will create a strong
-coaxial effect upon the shaft, and lead to a weak rotation of the pod while the wheel rotates.  This means the servo rotating the pod will
-experience an uneven force, and programming will be near impossible.  anything over a ratio of 2:1 is unworkable.  
+    <div class = "contact">
+      <h1>CONTACT</h1>
 
-Pod rotation pulleys will often skip.  this is usually due to a combination of these factors
+    <ul>
+      <li><a href="#">Youtube</a></li>
+      <li><a href="mailto:youremail@gmail.com">E-Mail</a></li>
+      <li><a href="https://github.com/yourusername">GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="https://ftcscout.org/teams/9581">FTCScout</a></li>
+    </ul>
 
-robot weight - the robot is too heavy.  
+    </div>
 
-lack of tension - always try to find perfect tension via a slotted test rig for your pod rotation pulleys and belts first before making the
-final cad.  tensioners can cause uneven forces and cause issues with programming
 
-lack of belt engagement - just make the pod rotation pulleys bigger.  lol. 
 
-it is also possible to just use a gear for the pod rotation if pulleys seem too problematic.  
-</p>
 
 
-<h2>K I S S </h2>
-<p>keep it stupid simple
 
 
-- try to reduce complexity wherever possible.  Uneccesary power transmissions, features and more should be eliminated.  
 
-however, keep in mind that we are optimizing for performance.  Dont simplify things for the sake of simplicity, otherwise you might end up 
-cutting essential features.  
 
-
-Remember what the goal of what youre doing is - if your changes don't acheive a particular goal, then don't do it.  
-
-Make it compact - but not too compact.  Swervedrives still need some space to be effective.  Being too small can lead to a lack of traction 
-with wheel thicknesses being too low, or fragility.  for any given general rule like for example, compactness, remember the goal its attempting to achieve.  If 
- said goal is no longer as important as what you're sacrificing, then dont continue with it mindlessly
-
-</p>
-</div>
-
-
-
-
-<div id = "coaxeffect">
-  <h2>
-    THE COAX EFFECT
-  </h2>
-
-  <p>
-  the coax effect is a known issue that comes to coaxial swerves, and it comes in two parts.  
-
-  the first is due to imperfect bearings, causing rotation of the central shaft, which powering the wheel, to end up 
-  actually moving the "pod" with it, changing its angle.  This unwanted movement fights the 
-  attempts of the servo that is meant to control rotation, and can mess with your tuning and steering.  
-
-  the second is a consequence of the gear, geared to the central shaft, moving around it as the pod is moved.  As the pod moves,
-  the gear attatched to the shaft geared via a bevel to the wheel rotates respective to a stationary observer, as well as the 
-  pod itself.  You can calculate it as exactly the gear ratio between the gear of the central shaft and the outer gear.  
-
-  this means that when the pod is rotated, the physical robot is moved as well, forcing the servos to actually do some "driving" 
-  action.  This puts extra strain on the servos.  
-</a>
-  
-
-  </p>
-
-  <p>parts and vendors
-
-<a href = "">Lily-Bearing</a>
-Lily bearing has one of the largest catalogs of the thin section type of bearings needed for swerve.
-
-thriftybot has many sizes of bearings in imperial as well.  
-
-rs = rubber shield.  isntall and forget, but might have a little more friction involved.  
-zz = metal cage by itself, meaning less friction, althought there is a chance dust and grime forms, or it might need to be 
-re-lubricated
-
-Melonbotics is one of the best vendors for swerve, with many useful items, including the smallest abs encoder for ftc,
- a custom swerve tread, and a powerful super servo.  
-
- East loop components is also reccomended, for their very high quality pinion gears and pulleys.  
-
-  </p>
-
-
-
-
-
-
-
-
-
-
-
-<p>common issues:
-  Encoders: 
-  
-  Improper configuration can cause the software to confuse which encoder corresponds to which pod, causing issues.  
-
-  Bad wiring can also mess with encoder readings, as frayed, torn, or otherwise chipped wires will disrupt readings.  
-  Bad connections on the Axon 4th wire encoder are very common and often overlooked.  Always check the quality of the 
-  crimp on connectors.  
-
-  Dysfunctional encoders can give inaccurate, inconsistent, or unstable readings.  Causes of this include simple breaking 
-  of the motor, hall effect sensor, any internal power transfers, and firmware crashes.  Firmware crashes are especially
-  common on the sensorange encoders.  
-  
-  Encoders must track the physical rotation of the pod, and so a disruption of the transmission that transfers
-  the rotation of the pod to the encoder, via losses in motion like backlash can cause error to build up.  
-
-  Improper gearing will also do the same, as an absolute encoder can only track it accurately if the pod 
-  is 1:1 with the encoder.  
-  
-  
-  Over/under gearing:
-
-  Overgearing can result in high power draw, blown fuses, and slow driving due to the wheels not having enough torque for 
-  the robot.  Always check using a drivetrain simulator like ILITE that your gearing is feasible for the given mass 
-  of the robot.  
-  
-  Robot Weight:
-
-  A sufficiently heavy robot will lead to further issues, as the axon mini will begin to struggle to power the 
-  azimuth rotation for the wheels.  This is why it is reccomended to keep your robot under 13kg if you are running 
-  coaxial swerve.  
-
-  fragility: 
-  poorly designed parts, especially 3d printed ones can bend, flex and break.  
-
-  Improper tension: 
-  lack of tension can cause belts to skip resulting in lost motion.  Too much tension can lead to a loss in efficency
-  and 
-</p>
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-<!--script src + "coaxial/hardware.js"-->
-<script src="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware.js"></script>
+    <script src="https://aestusastra.github.io/SwerveManual-0/coaxial/hardware.js"></script>
+  </body>
 </html>
 
 
