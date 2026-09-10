@@ -179,7 +179,7 @@ display: flex;
 
 /* Main content stuff */
 .maincontent {
-  margin-top: 4rem; /* Adjust based on the height of your top bar */
+  padding-top: 5rem; /* Adjust based on the height of your top bar */
   margin-left: 0;
   margin-right: 0rem;
   padding-right: 8rem;
@@ -194,6 +194,17 @@ display: flex;
   font-family: Arial, Helvetica, sans-serif;
 
 }
+
+#partsandvendors a {
+  color:red;
+}
+
+#partsandvendors a:hover {
+  text-decoration: none;
+  color:#64BB58;
+}
+
+
 
 #commonissues {
   font-family: Arial, Helvetica, sans-serif;
