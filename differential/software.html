@@ -66,8 +66,17 @@
 
           The wheel will always have an angle relative to the robot, based on the joystick  and y.  We can describe this via the 
           vectors "strafe", and "forward".  We then combine this with the rotation vector, which is different in "polarity"(
-              positive or negative based on the wheel.  You control this with the other joystick.  
-          )
+              positive or negative based on the wheel.  You control this with the other joystick.  )
+
+          Now we can finally begin structuring our code and mapping inputs.  
+
+          you will need an overall "swerve drive" Class, as well as a "swerve pod" class.  The swerve pod will take in 
+          inputs from the swerve drive class and then use that to control its motors and read from encoders, using the 
+          parameters assigned to it based on its physical placement on the robot.  
+          
+          The end kinematics aren't particularly difficult.  the required ones will be listed out below.  
+
+          
       </p>
 
 
