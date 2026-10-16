@@ -1,4 +1,4 @@
-.body {
+body {
   margin:0;
 }
 
@@ -186,6 +186,10 @@ display: flex;
 #progtutorial {
   font-family: Arial, Helvetica, sans-serif;
 
+}
+
+.commonissues {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact {
